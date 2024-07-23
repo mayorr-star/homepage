@@ -13,13 +13,15 @@
   </head>
   <body>
     <header class="main_header">
-      <div class="content">
         <div class="profile_container">
-          <img
-            src="./images/IMG_20221229_230027_945.jpg"
-            alt="Page Author"
-            class="header_img"
-          />
+          <picture>
+            <source media="(max-width: 500px)" srcset="./images/profile_tablet.jpg">
+            <img
+              src="./images/profile_desktop.jpg"
+              alt="Page Author"
+              class="header_img"
+            />
+          </picture>
           <h1 class="image_text author_name">Immanuel Osei Boateng</h1>
         </div>
         <section class="about_me">
@@ -75,7 +77,6 @@
             </ul>
           </div>
         </section>
-      </div>
     </header>
     <main>
       <header>
@@ -84,7 +85,10 @@
       <section class="projects">
         <article class="project_card">
           <div class="project_img">
-            <img src="./images/battle.JPG" alt="Project battleship" />
+            <picture>
+              <source media="(max-width: 500px)" srcset="./images/battleship_mobile.png">
+              <img src="./images/battle.JPG" alt="Project battleship" />
+            </picture>
           </div>
           <div class="project_info">
             <div class="project_name">
